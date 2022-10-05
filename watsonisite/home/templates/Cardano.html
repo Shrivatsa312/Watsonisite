@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardano | Watsonisite</title> <!-- Title of page -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwindcss source -->
+  </head>
+<body class="bg-[#222B5A]">
+    <!-- Logo -->
+    <div class="logo bg-[#313D7C] py-3">
+      <h1 class="font-bold text-4xl text-center text-white">WATSONISITE</h1>
+    </div>
+    <!-- Navigation bar -->
+    <div class="navi bg-[#1E254D] py-2 sticky top-0">
+      <nav>
+        <ul class="flex justify-around text-white font-semibold text-xl px-8">
+          <li class="px-3">
+            <a href="home">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Home
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="news">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                News
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="faq">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                FAQs
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="calc">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Bitcoin Calculator
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="contact">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Contact Us
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="subscribe">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Subscribe
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+    <!-- Description of cardano -->
+   <p class="text-1xl text-left text-white px-20"><br><br>
+        <b>Cardano</b>'s cryptocurrency is named Ada after Augusta Ada King, Countess of Lovelace (1815-1852), who is commonly regarded as the first computer programmer. Ada is used in the blockchain's PoS consensus mechanism. It is given as a reward for work done for the blockchain by users participating in a stake pool.
+        Charles Hoskinson, the co-founder of Ethereum, began the development of Cardano in 2015 and launched the platform in 2017.<br><br>
+        </p>
+        <div>
+          <img
+            src="{% static 'mysite/images/cardano1.jpg' %}"
+            alt=""
+            class="w-[50%] mx-auto"
+          />
+        </div>
+        <br>
+        <p class="text-1xl text-left text-white px-20">
+        Cardano has positioned itself as an alternative to Ethereum. Both platforms are used for similar applications, such as smart contracts, and have goals of building a connected and decentralized system.
+        Cardano considers itself an updated version of Ethereum and has anointed itself a "third-generation" platform, compared with Ethereum's "second-generation" credentials. The blockchain platform also has a goal of providing banking services to the world's unbanked.
+        There are several key differences between Bitcoin and Cardano. Bitcoin was developed to be a peer-to-peer payment system. Cardano is an ecosystem that allows other developers to create tokens, decentralized applications, or create other use cases for scalable blockchain network.
+        Cardano uses PoS in its consensus and doesn't reward Ada as an incentive in a competitive mining process like Bitcoin does. This reduces the energy and waste footprints by not requiring large amounts of electricity to power computers specifically designed for mining. Cardano users can install compatible wallet software on their computers or devices, stake their Ada, and begin earning rewards for participating.<br><br>
+      </p>
+        <div>
+          <!-- Taking live value of cardano from tradingview webiste -->
+          <section class="w-[50rem] mx-auto">
+            <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_5fe1a" class="h-[20rem]"></div>
+  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/ADAUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">ADAUSDT Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BINANCE:ADAUSDT",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "in",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_top_toolbar": true,
+  "allow_symbol_change": true,
+  "container_id": "tradingview_5fe1a"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+          </section>
+        </div>
+        <p class="text-1xl text-left text-white px-20">
+        The Cardano platform runs on the Ouroboros consensus protocol. Ouroboros, created by Cardano in its foundation phase, is the first proof of stake (PoS) protocol designed to reduce the energy expenditure required by proof of work (PoW) mining. It does this by eliminating the massive computing resources that the proof of work algorithm uses.
+        There are currently two major consensus mechanisms that cryptocurrencies use to verify transactions. Proof of work, which is used by Bitcoin, requires users to solve complex cryptographic puzzles before they are added to the blockchain. This is also known as cryptocurrency mining. Proof of stake, the other major consensus mechanism, is more energy-efficient because it does not rely on crypto mining. Instead, it relies on multiple random validators to agree that a transaction is accurate before it is added to the blockchain.
+        Atypically, Cardano does not have a white paper. Instead, it uses design principles intended to overcome issues faced by other cryptocurrencies such as scalability, interoperability, and regulatory compliance. Cardano claims that it overcomes problems in the crypto market: mainly that Bitcoin is too slow and inflexible, and that Ethereum is not safe or scalable.
+        Within the Cardano platform, Ada exists on the settlement layer. This layer is similar to Bitcoin and keeps track of transactions. The second layer is the computation layer. This layer is designed to be similar to Ethereum, enabling smart contracts and applications to run on the platform 
+    </p>
+    <br> <br>
+  </body>
+</html>			

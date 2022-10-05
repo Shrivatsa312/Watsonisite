@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin Calculatior | Watsonisite</title>
+    <!-- Title of the page -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS source -->
+    <!-- Javascript function for calculating input INR in BTC -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var livePrice = {
+        async: true,
+        scroosDomain: true,
+        url: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&ids=bitcoin&order=market_cap_desc&per_page=100&page=1&sparkline=false",
+        method: "GET",
+        headers: {},
+      };
+
+      $.ajax(livePrice).done(function (response) {
+        console.log(response);
+      });
+    </script>
+    <script>
+      function calc() {
+        let number = parseFloat(document.getElementById("amount").value);
+        let result = (document.getElementById("result").value =
+          number / 1500000);
+      }
+    </script>
+  </head>
+  <body class="bg-[#222B5A]">
+    <div class="logo bg-[#313D7C] py-3">
+      <h1 class="font-bold text-4xl text-center text-white">WATSONISITE</h1>
+    </div>
+    <div class="navi bg-[#1E254D] py-2">
+      <nav>
+        <ul class="flex justify-around text-white font-semibold text-xl px-8">
+          <li class="px-3">
+            <a href="home">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Home
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="news">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                News
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="faq">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                FAQs
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="calc">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Bitcoin Calculator
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="contact">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Contact Us
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="subscribe">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Subscribe
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div
+      class="calculator flex flex-col items-center text-white w-[30rem] my-20 mx-auto"
+    >
+      <!-- Containter having input fields -->
+      <label for="" class="text-2xl">Enter your amount:</label><br />
+      <input
+        type="text"
+        name="amount"
+        id="amount"
+        class="mx-11 w-[20rem] h-10 text-black"
+      />
+      <!-- User input -->
+
+      <br />
+      <button
+        class="border border-white rounded-2xl w-20 h-10 hover:cursor-pointer hover:bg-[#313D7C] hover:w-56 duration-200"
+        onclick="calc()"
+      >
+        Submit
+      </button>
+      <!-- Submit button -->
+      <br />
+      <p class="text-2xl">Your amount in bitcoin is:</p>
+
+      <br /><input
+        type="text"
+        name="result"
+        id="result"
+        class="w-[20rem] h-10 text-black"
+      />
+      <!-- Output converted value -->
+    </div>
+  </body>
+</html>

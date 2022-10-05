@@ -1,0 +1,192 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News | Watsonisite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#222B5A]">
+    <!-- Logo -->
+    <div class="logo bg-[#313D7C] py-3">
+      <h1 class="font-bold text-4xl text-center text-white">WATSONISITE</h1>
+    </div>
+    <!-- Navigation bar -->
+    <div class="navi bg-[#1E254D] py-2 sticky top-0">
+      <nav>
+        <ul class="flex justify-around text-white font-semibold text-xl px-8">
+          <li class="px-3">
+            <a href="home">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Home
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="news">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                News
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="faq">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                FAQs
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="calc">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Bitcoin Calculator
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="contact">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Contact Us
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="subscribe">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Subscribe
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Columns of different crypocurrencies -->
+    <div class="crypto-items grid grid-cols-3">
+      <div
+        class="bitcoin mx-auto w-60 bg-red-400 my-20 rounded-2xl h-[18rem] shadow-2xl"
+      >
+        <section class="cimage mx-6 my-5">
+          <img
+            src="{% static 'mysite/images/Bitcoin.png' %}"
+            alt=""
+            class="w-44 rounded-xl ml-2 shadow-2xl"
+          />
+        </section>
+        <section class="font-bold text-center text-white cdetails">
+          <h1>BITCOIN</h1>
+          <br />
+          <p>
+            <a href="https://news.bitcoin.com/" target="_blank">
+              Click here to know the latest news about bitcoin!
+            </a>
+          </p>
+        </section>
+      </div>
+
+      <div
+        class="ethereum mx-auto w-60 bg-red-400 my-20 rounded-2xl h-[18rem] shadow-2xl"
+      >
+        <section class="cimag mx-6 my-5">
+          <img
+            src="{% static 'mysite/images/ethereum.jpeg' %}"
+            alt=""
+            class="w-44 h-28 rounded-xl ml-2 shadow-2xl"
+          />
+        </section>
+        <section class="font-bold text-center text-white cdetails">
+          <h1>ETHEREUM</h1>
+          <br />
+          <p>
+            <a href="https://ethereum.org/en/community/events/" target="_blank">
+              Click here to know the latest news about Ethereum!
+            </a>
+          </p>
+        </section>
+      </div>
+
+      <div
+        class="xrp mx-auto w-60 bg-red-400 my-20 rounded-2xl h-[18rem] shadow-2xl"
+      >
+        <section class="cimage mx-6 my-5">
+          <img
+            src="{% static 'mysite/images/xrp.webp' %}"
+            alt=""
+            class="w-44 rounded-xl ml-2 shadow-2xl"
+          />
+        </section>
+        <section class="font-bold text-center text-white cdetails">
+          <h1>XRP</h1>
+          <br />
+          <p>
+            <a
+              href="https://economictimes.indiatimes.com/topic/xrp"
+              target="_blank"
+            >
+              Click here to know the latest news about XRP!
+            </a>
+          </p>
+        </section>
+      </div>
+
+      <div
+        class="cardano mx-auto w-60 bg-red-400 my-20 rounded-2xl h-[18rem] shadow-2xl"
+      >
+        <section class="cimage mx-6 my-5">
+          <img
+            src="{% static 'mysite/images/cardano.jpg' %}"
+            alt=""
+            class="w-44 h-28 rounded-xl ml-2 shadow-2xl"
+          />
+        </section>
+        <section class="font-bold text-center text-white cdetails">
+          <h1>CARDANO</h1>
+          <br />
+          <p>
+            <a href="https://cardano.org/news/" target="_blank">
+              Click here to know the latest news about Cardano!
+            </a>
+          </p>
+        </section>
+      </div>
+
+      <div
+        class="doge mx-auto w-60 bg-red-400 my-20 rounded-2xl h-[18rem] shadow-2xl"
+      >
+        <section class="cimage mx-6 my-5">
+          <img
+            src="{% static 'mysite/images/doge.jpeg' %}"
+            alt=""
+            class="w-44 h-28 rounded-xl ml-2 shadow-2xl"
+          />
+        </section>
+        <section class="font-bold text-center text-white cdetails">
+          <h1>DOGECOIN</h1>
+          <br />
+          <p>
+            <a
+              href="https://economictimes.indiatimes.com/topic/dogecoin"
+              target="_blank"
+            >
+              Click here to know the latest news about Dogecoin!
+            </a>
+          </p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

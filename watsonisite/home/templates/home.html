@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Watsonisite</title> <!-- Title of page -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwindcss source -->
+  </head>
+
+  <body class="bg-[#222B5A]">
+    <div class="logo bg-[#313D7C] py-3">
+      <h1 class="font-bold text-4xl text-center text-white">WATSONISITE</h1>
+    </div>
+    <div class="navi bg-[#1E254D] py-2 sticky top-0">
+      <nav>
+        <ul class="flex justify-around text-white font-semibold text-xl px-8">
+          <li class="px-3">
+            <a href="home">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Home
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="news">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                News
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="faq">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                FAQs
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="calc">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Bitcoin Calculator
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="contact">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Contact Us
+              </button>
+            </a>
+          </li>
+          <li class="px-3">
+            <a href="subscribe">
+              <button
+                class="w-48 h-10 rounded-md hover:bg-[#222B5A] hover:delay-150 duration-300"
+              >
+                Subscribe
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main1">
+      <section class="flex my-20">
+        <div class="w-[60%]">
+          <div class="paragraph1 pl-28"> <!-- Description in big font size -->
+            <p class="text-white font-semibold text-5xl">
+              Watsonisite is a Crypto site, that includes information about
+              cryptocurrencies, the trends, the price, and the performance of
+              the particular cryptocurrency
+            </p>
+          </div>
+        </div>
+        <div class="w-[40%]">
+          <img
+            src="{% static 'mysite/images/1.jpg' %}"
+            alt=""
+            class="w-[20rem] ml-20 rounded-lg shadow-2xl"
+          /> <!-- Image taken from static folder using django -->
+        </div>
+      </section>
+    </div>
+    <div class="main2">
+      <p class="text-white px-10 text-center font-light text-2xl">
+        A <i><b>Cryptocurrency</b></i> is a digital currency, which is an
+        alternative form of payment created using encryption algorithms. The use
+        of encryption technologies means that cryptocurrencies function both as
+        a currency and as a virtual accounting system. <hr class="w-[50rem] mx-auto my-5">
+        <p class="text-white px-10 text-center font-light text-2xl"> It is a decentralized
+        system for verifying that the parties to a transaction have the money
+        they claim to have, eliminating the need for traditional intermediaries,
+        such as banks, when funds are being transferred between two entities.
+        Individual coin ownership records are stored in a digital ledger, which
+        is a computerized database using strong cryptography to secure
+        transaction records, to control the creation of additional coins, and to
+        verify the transfer of coin ownership. </p> <hr class="w-[50rem] mx-auto my-5"> 
+        <p class="text-white px-10 text-center font-light text-2xl"> Despite their name,
+        cryptocurrencies are not considered to be currencies in the traditional
+        sense and while varying treatments have been applied to them, including
+        classification as commodities, securities, as well as currencies,
+        cryptocurrencies are generally viewed as a distinct asset class in
+        practice.</p> <hr class="w-[50rem] mx-auto my-5"> 
+        <p class="text-white px-10 text-center font-light text-2xl"> Some crypto schemes use validators to maintain the
+        cryptocurrency. In a proof-of-stake model, owners put up their tokens as
+        collateral. In return, they get authority over the token in proportion
+        to the amount they stake. Generally, these token stakers get additional
+        ownership in the token over time via network fees, newly minted tokens
+        or other such reward mechanisms.</p>
+      </p>
+      <hr class="w-[50rem] mx-auto my-5">
+      <p class="text-white px-20 text-left font-light text-2xl"> Some of the popular cryptocurrencies are listed below:</p> <br>
+      <!-- Example cryptocurrencies in the form of buttons which navigate to their pages -->
+      <div class="flex justify-around px-40 text-white text-xl font-semibold">
+        <a href="Bitcoin" target="_blank"><button class="border border-white w-40 h-10 rounded-lg hover:w-60 duration-200">Bitcoin</button></a>
+        <a href="Ethereum" target="_blank"><button class="border border-white w-40 h-10 rounded-lg hover:w-60 duration-200">Ethereum</button></a>
+        <a href="XRP" target="_blank"><button class="border border-white w-40 h-10 rounded-lg hover:w-60 duration-200">XRP</button></a>
+        <a href="Cardano" target="_blank"><button class="border border-white w-40 h-10 rounded-lg hover:w-60 duration-200">Cardano</button></a>
+        <a href="Dogecoin" target="_blank"><button class="border border-white w-40 h-10 rounded-lg hover:w-60 duration-200">Dogecoin</button></a>
+      </div>
+	
+    </div>
+    <hr class="w-[50rem] mx-auto my-4"> 
+    
+  </body>
+</html>
